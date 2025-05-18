@@ -1,135 +1,3 @@
-<<<<<<< HEAD
-// Sample business data
-const businesses = [
-    {
-        id: 1,
-        name: "Coffee Brothers",
-        category: "Cafeterías",
-        rating: 4.6,
-        reviewCount: 63,
-        address: "Pali central, 20 vrs al Norte, Estelí 31000",
-        description: "Una de las mejores Cafeterías de Centroamerica, en el corazón de la ciudad de Estelí",
-        phone: "",
-        features: ["WiFi gratis", "Terraza", "Accesible"],
-        hours: {
-            monday: "8 a.m.–9 p.m.",
-            tuesday: "8 a.m.–9 p.m.",
-            wednesday: "8 a.m.–9 p.m.",
-            thursday: "8 a.m.–9 p.m.",
-            friday: "8 a.m.–9 p.m.",
-            saturday: "8 a.m.–9:15 p.m.",
-            sunday: "8 a.m.–9:15 p.m."
-        },
-        tags: ["Cafeterías", "WiFi", "Terraza"],
-        images: [
-            "https://lh3.googleusercontent.com/gps-cs-s/AC9h4noIwt_g41iHh0mLvIdqW_WAZOm4Ic9TMRe_70gy-4AhSfAPuf_1BTcMh_YQpD5qHpnqBtocvTxBzodwW642gELTkf_cImGDtMeBDqC6L_aaR82T_YUEfWl8gXaeznftaqOVlomkwQ=s1360-w1360-h1020-rw",
-            "https://lh3.googleusercontent.com/p/AF1QipMwDlQJ9yDWNTSNbcrf0bUH1-xSlJLJZg2kvUVq=s1360-w1360-h1020-rw",
-            "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrn8N7frhEYQJb8iqgNXKbMH40fB6Qt_VdAfAFU8aUvRXUoK68tFcpCtcITgMWu_lx7wg5yHe1BzFd_kaIbsW8Abcbj01bFSFyLWE7ajdqF3OMrFvQagm1pnMqXaUPWKrprsx4DHw=s1360-w1360-h1020-rw",
-            "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nocyTFG7GEjRlj3hYiTvnZo2uZoCF9QfkStc7zlsJvqNDaCa4833fZgyw4hmFugoPbCKbKAbnEE-jvt7S1vM3nOiteyaONFqEWgg-D_fxjViys79l86EfIhUs-LQDlOiwOsmRI=s1360-w1360-h1020-rw",
-            "https://lh3.googleusercontent.com/p/AF1QipN7LvOj8E3da8zEyekdT0A9t9FfVT21O4qx-yWZ=s1360-w1360-h1020-rw"
-        ],
-        reviews: [
-            {
-                author: "Soledad Rivera",
-                rating: 5,
-                date: "Hace 1 semana",
-                comment: "Super bonito el lugar y la ubicación , Un lugar prefecto para pasar un rato agradable tiene un buen personal"
-            },
-            {
-                author: "Yelkis Carrión",
-                rating: 5,
-                date: "Hace 1 mes",
-                comment: "Uno de los mejores lugares que hemos visitado en Estelí, son buenos precios y el lugar es precioso. Las muchachas que atienden son muy amables, todo el tiempo estuvieron pendientes y la comida no tardó en llegar a nuestra mesa. Puntos extras por la playlist que tenían, muy buena música."
-            }
-        ],
-        isFavorite: false
-    },
-    {
-        id: 2,
-        name: "TIENDA QUINTA AVENIDA",
-        category: "Moda",
-        rating: 4.5,
-        reviewCount: 11,
-        address: "Petronic el carmen 1 cuadra al oeste 10 vrs al Sur ESTELI, Estelí",
-        description: "Tienda de ropa y accesorios con diseños exclusivos de diseñadores locales. Ofrecemos prendas de calidad con estilo contemporáneo para hombres y mujeres.",
-        phone: "2713 2856",
-        features: ["Ropa", "Accesorios", "Moda"],
-        hours: {
-            monday: "8 a.m.–5 p.m.",
-            tuesday: "8 a.m.–5 p.m.",
-            wednesday: "8 a.m.–5 p.m.",
-            thursday: "8 a.m.–5 p.m.",
-            friday: "8 a.m.–5 p.m.",
-            saturday: "Cerrado",
-            sunday: "Cerrado"
-
-        },
-        tags: ["Moda", "Local", "Accesorios"],
-        images: [
-            "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nowkue32367LoGzkO22zx2yJN37j0Pi7L2XCc2EOg-MxUxvuAbxmVlyJ9jVUkmlX0R0u31rsPVTzNrdKjNv70HEMSz2FgXfUrww_s0RVFA8spqf-nj4SqyW3vHzgXWMYxdaKrDK=s1360-w1360-h1020-rw",
-            "https://lh3.googleusercontent.com/gps-cs-s/AC9h4noe9PSmE7kgf6tsm8NdIoxyehjG-hzepkY9-6WJ78faQ52PxE5_JyzNrDo8u1aQ2sGA7znJKaGCM-CIjHGTRY-AWSitAazkFxp6c9mGQD9Cv-ENnqyJCu2XhRs1_b-sS6hbFpYM_g=s1360-w1360-h1020-rw",
-            "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nretcPoNeOwsPi2ukUb07HZabT_tAS7yaJXKWvtDt-C7XXU7PeEDkH_EHxKYCQtG2DvTc2ZsgbUiS9-BNeNJl00ObbgQq5NU88_jVZMfmpY1EMS3V4TjlSYvSwJQX078OZForD4=s1360-w1360-h1020-rw",
-        ],
-        reviews: [
-            {
-                author: "Ana Torres",
-                rating: 5,
-                date: "Hace 3 días",
-                comment: "Me encanta esta tienda! Tienen prendas únicas y de muy buena calidad. El servicio es excelente."
-            },
-            {
-                author: "Luis Ramírez",
-                rating: 3,
-                date: "Hace 2 semanas",
-                comment: "Buena selección de ropa, pero los precios son un poco altos. El personal es muy atento."
-            }
-        ],
-        isFavorite: true
-    },
-    {
-        id: 3,
-        name: "Biblioteca Pública Municipal Dr. Samuel Meza",
-        category: "Biblioteca",
-        rating: 4.6,
-        reviewCount: 9,
-        address: "3JWW+HG9, Estelí",
-        description: "",
-        phone: "2713 0214",
-        features: ["Turismo", "Historia", "Área de lectura"],
-        hours: {
-            monday: "8 a.m.–5 p.m.",
-            tuesday: "8 a.m.–5 p.m.",
-            wednesday: "8 a.m.–5 p.m.",
-            thursday: "8 a.m.–5 p.m.",
-            friday: "8 a.m.–5 p.m.",
-            saturday: "Cerrado",
-            sunday: "Cerrado"
-
-        },
-        tags: ["Libros", "WiFi", "Cultural", "Historia local", "Estudio", "Investigación", "Arte", "Literatura"],
-        images: [
-            "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqMf-9pQvqgqBs9Wr0m6C_T2ure_W8GVewb9Z6aPh_1zsalSNimVvjOLY_3G2NlW-UpaPg_Zd6eOtcsuH43oDYPxuDck_2FEg7w3zoyCY_kfOk0DNxwO40r6Fib3h1kxvTP-qXl=s1360-w1360-h1020-rw",
-            "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqjeNwqcGC9Zss96m_sKB1a32JKFFN57ILRZgf9HK_XxWgiqMuZaRLDhJj_alqX_O-WSAqqfYbB75mFHu2_4Qts_Vp5vgNk7uzTU4G7ceqhRR3OYGqTCg6ItSy9AQu3MMiAApq0=s1360-w1360-h1020-rw",
-            "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqraz38BYZQ8EQG0S04f3vkxlavj7fWKBEFrzWXd0hzzcaL3dTvIhQ7w6Vb1vz6IKeXBCUXX7F0PAXbjBGS_mBUBPDjqj4Ot8FRWYu7EEndumWhVXPuVIAovTILG38xGZrrKu0=s1360-w1360-h1020-rw"
-        ],
-        reviews: [
-            {
-                author: "Sofía Jiménez",
-                rating: 5,
-                date: "Hace 1 semana",
-                comment: "Mi lugar favorito en la ciudad! Tienen una selección increíble de libros y el ambiente es perfecto para leer."
-            },
-            {
-                author: "Roberto Sánchez",
-                rating: 4,
-                date: "Hace 1 mes",
-                comment: "La biblioteca tiene una gran variedad de libros y recursos. El personal es muy amable y siempre dispuesto a ayudar."
-            }
-        ],
-        isFavorite: false
-    }
-];
-
 document.addEventListener('DOMContentLoaded', function () {
     renderBusinessDirectory();
     initCategoryFilters();
@@ -587,7 +455,7 @@ function closeAddBusinessModal() {
     if (modal) modal.classList.add('hidden');
 }
 
-=======
+
 // Sample business data
 const businesses = [
     {
@@ -651,7 +519,7 @@ const businesses = [
             friday: "8 a.m.–5 p.m.",
             saturday: "Cerrado",
             sunday: "Cerrado"
-     
+
         },
         tags: ["Moda", "Local", "Accesorios"],
         images: [
@@ -693,7 +561,7 @@ const businesses = [
             friday: "8 a.m.–5 p.m.",
             saturday: "Cerrado",
             sunday: "Cerrado"
-          
+
         },
         tags: ["Libros", "WiFi", "Cultural", "Historia local", "Estudio", "Investigación", "Arte", "Literatura"],
         images: [
@@ -723,7 +591,7 @@ document.addEventListener('DOMContentLoaded', function () {
     renderBusinessDirectory();
     initCategoryFilters();
 
-    // Initialize map 
+    // Initialize map
     document.getElementById('map').innerHTML = '<div class="h-full w-full bg-gray-200 flex items-center justify-center text-gray-500"><i class="fas fa-map-marked-alt text-4xl mr-3"></i><span>Mapa interactivo</span></div>';
 
     // Initialize mini map in modal
@@ -1095,4 +963,3 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
->>>>>>> c6146c46c1838a88dc1c65f82ce6e160929b743e
