@@ -15,8 +15,7 @@ Una aplicación web que permite explorar, descubrir y conectar con negocios loca
 ## 🚀 Tecnologías Utilizadas
 
 - **Frontend**: HTML5 + CSS3 + Tailwind
-- **Backend**: Node.js
-- **Base de datos**: SQLite
+
 - **APIs externas**: Google Maps API
 
 ## 🛠️ Instalación y uso
@@ -25,22 +24,7 @@ Una aplicación web que permite explorar, descubrir y conectar con negocios loca
    ```bash
    git clone https://github.com/xItzHypeR/Tesferia.git
    cd directorio-locales
-   ```
 
-2. Instala las dependencias:
-   ```bash
-   npm install
-   ```
-
-3. Inicia el entorno de desarrollo:
-   ```bash
-   npm run dev
-   ```
-
-4. Accede a la app desde tu navegador:
-   ```
-   http://localhost:3000
-   ```
 
 ## 🧑‍💼 Casos de uso
 
