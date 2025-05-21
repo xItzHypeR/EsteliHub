@@ -510,7 +510,7 @@ const businesses = [
         address: "Petronic el carmen 1 cuadra al oeste 10 vrs al Sur ESTELI, Estelí",
         description: "Tienda de ropa y accesorios con diseños exclusivos de diseñadores locales. Ofrecemos prendas de calidad con estilo contemporáneo para hombres y mujeres.",
         phone: "2713 2856",
-        features: [ "Ropa", "Accesorios", "Moda"],
+        features: ["Ropa", "Accesorios", "Moda"],
         hours: {
             monday: "8 a.m.–5 p.m.",
             tuesday: "8 a.m.–5 p.m.",
@@ -586,3 +586,56 @@ const businesses = [
         isFavorite: false
     }
 ];
+
+
+// Mostrar modal de login
+document.getElementById('openLoginBtn').onclick = function () {
+    document.getElementById('loginModal').classList.remove('hidden');
+};
+// Mostrar modal de registro desde login
+document.getElementById('showRegisterBtn').onclick = function () {
+    document.getElementById('loginModal').classList.add('hidden');
+    document.getElementById('registerModal').classList.remove('hidden');
+};
+// Mostrar modal de login desde registro
+document.getElementById('showLoginBtn').onclick = function () {
+    document.getElementById('registerModal').classList.add('hidden');
+    document.getElementById('loginModal').classList.remove('hidden');
+};
+// Cerrar modales
+function closeLoginModal() {
+    document.getElementById('loginModal').classList.add('hidden');
+}
+function closeRegisterModal() {
+    document.getElementById('registerModal').classList.add('hidden');
+}
+// Mostrar login si se intenta agregar local sin estar autenticado
+function handleAddBusinessClick() {
+    // Aquí puedes poner tu lógica de autenticación real
+    document.getElementById('loginModal').classList.remove('hidden');
+}// Mostrar modal de login
+document.getElementById('openLoginBtn').onclick = function () {
+    document.getElementById('loginModal').classList.remove('hidden');
+};
+// Mostrar modal de registro desde login
+document.getElementById('showRegisterBtn').onclick = function () {
+    document.getElementById('loginModal').classList.add('hidden');
+    document.getElementById('registerModal').classList.remove('hidden');
+};
+// Mostrar modal de login desde registro
+document.getElementById('showLoginBtn').onclick = function () {
+    document.getElementById('registerModal').classList.add('hidden');
+    document.getElementById('loginModal').classList.remove('hidden');
+};
+// Cerrar modales
+function closeLoginModal() {
+    document.getElementById('loginModal').classList.add('hidden');
+}
+function closeRegisterModal() {
+    document.getElementById('registerModal').classList.add('hidden');
+}
+// Mostrar login si se intenta agregar local sin estar autenticado
+function handleAddBusinessClick() {
+    // Aquí puedes poner tu lógica de autenticación real
+    document.getElementById('loginModal').classList.remove('hidden');
+}
