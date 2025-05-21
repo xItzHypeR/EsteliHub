@@ -585,4 +585,33 @@ const businesses = [
         ],
         isFavorite: false
     }
+
+
 ];
+
+// Mostrar modal de login
+    document.getElementById('openLoginBtn').onclick = function() {
+        document.getElementById('loginModal').classList.remove('hidden');
+    };
+    // Mostrar modal de registro desde login
+    document.getElementById('showRegisterBtn').onclick = function() {
+        document.getElementById('loginModal').classList.add('hidden');
+        document.getElementById('registerModal').classList.remove('hidden');
+    };
+    // Mostrar modal de login desde registro
+    document.getElementById('showLoginBtn').onclick = function() {
+        document.getElementById('registerModal').classList.add('hidden');
+        document.getElementById('loginModal').classList.remove('hidden');
+    };
+    // Cerrar modales
+    function closeLoginModal() {
+        document.getElementById('loginModal').classList.add('hidden');
+    }
+    function closeRegisterModal() {
+        document.getElementById('registerModal').classList.add('hidden');
+    }
+    // Mostrar login si se intenta agregar local sin estar autenticado
+    function handleAddBusinessClick() {
+        // Aquí puedes poner tu lógica de autenticación real
+        document.getElementById('loginModal').classList.remove('hidden');
+    }
