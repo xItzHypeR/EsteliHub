@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
         mobileMenuBtn.addEventListener('click', function () {
             mobileMenu.classList.toggle('hidden');
         });
-    }
+    }   
 
     // Initialize map 
     document.getElementById('map').innerHTML = '<div class="h-full w-full bg-gray-200 flex items-center justify-center text-gray-500"><i class="fas fa-map-marked-alt text-4xl mr-3"></i><span>Mapa interactivo</span></div>';
