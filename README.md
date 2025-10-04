@@ -22,7 +22,7 @@ Una aplicación web que permite explorar, descubrir y conectar con negocios loca
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/xItzHypeR/Tesferia.git
+   git clone https://github.com/xItzHypeR/Estelihub.git
    cd directorio-locales
 
 
